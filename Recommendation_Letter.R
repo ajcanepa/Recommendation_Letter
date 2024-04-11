@@ -29,9 +29,9 @@ doc <- doc %>%
   ) %>% 
   body_add_par("", style = "Normal") %>%
   body_add_par("", style = "Normal") %>%
-  body_add_fpar(fpar(ftext("Me dirijo a usted para recomendarle a Rocío Alonso las Heras, que ha solicitado la admisión en vuestra institución.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
+  body_add_fpar(fpar(ftext("Me dirijo a usted para recomendarle a [NOMBRE RECOMENDADO], que ha solicitado la admisión en vuestra institución.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
   body_add_par("", style = "Normal") %>%
-  body_add_fpar(fpar(ftext("Como director del Área de Lenguajes y Sistemas Informáticos del Departamento de Ingeniería Informática de la Universidad de Burgos, conozco a la candidata Rocío Alonso las Heras por sus estudios cursados en el Grado de la Ingeniería de la Salud de nuestra institución. En las dos asignaturas en que he tenido a la candidata de alumna, su dedicación y constancia hacia los estudios han sido más que notables. En particular, destacan sus habilidades en el tratamiento de datos y en el manejo de herramientas informáticas y de computación.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
+  body_add_fpar(fpar(ftext("Como director del Área de Lenguajes y Sistemas Informáticos del Departamento de Ingeniería Informática de la Universidad de Burgos, conozco a la candidata [NOMBRE RECOMENDADO] por sus estudios cursados en el Grado de la Ingeniería de la Salud de nuestra institución. En las dos asignaturas en que he tenido a la candidata de alumna, su dedicación y constancia hacia los estudios han sido más que notables. En particular, destacan sus habilidades en el tratamiento de datos y en el manejo de herramientas informáticas y de computación.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
   body_add_par("", style = "Normal") %>%
   body_add_fpar(
     block_list(
@@ -45,7 +45,7 @@ doc <- doc %>%
   body_add_par("", style = "Normal") %>%
   body_add_fpar(fpar(ftext("Su interés en la Minería de Datos, la Inteligencia Artificial y la Ciberseguridad ha sido una constante a lo largo de todos sus estudios universitarios, culminando con el previamente mencionado trabajo de fin de grado donde se familiarizó con las técnicas de programación en lenguajes como R y Python, preprocesamiento y análisis de datos y diseño e implementación de aplicaciones web tipo Shiny.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
   body_add_fpar(fpar(ftext("", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
-  body_add_fpar(fpar(ftext("Por todos estos motivos, recomiendo a Rocío Alonso las Heras como candidata por su destacado interés en la materia, alta formación, responsabilidad y eficiencia en el ámbito académico.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
+  body_add_fpar(fpar(ftext("Por todos estos motivos, recomiendo a [NOMBRE RECOMENDADO] como candidata por su destacado interés en la materia, alta formación, responsabilidad y eficiencia en el ámbito académico.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
   body_add_par("", style = "Normal") %>%
   body_add_fpar(
     block_list(
@@ -65,4 +65,4 @@ doc <- doc %>%
   body_add_fpar(fpar(ftext("Universidad de Burgos", fp_italic), fp_p = fp_par(text.align = "left")))
 
 # Save the Word document
-print(doc, target = "Recommendation_Letter_Rocio_Alonso.docx")
+print(doc, target = "Recommendation_Letter_[RECOMENDADO].docx")
