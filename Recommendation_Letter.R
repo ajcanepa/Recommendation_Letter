@@ -29,20 +29,20 @@ doc <- doc %>%
   ) %>% 
   body_add_par("", style = "Normal") %>%
   body_add_par("", style = "Normal") %>%
-  body_add_par("", style = "Normal") %>%
   body_add_fpar(fpar(ftext("Me dirijo a usted para recomendarle a Rocío Alonso las Heras, que ha solicitado la admisión en vuestra institución.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
   body_add_par("", style = "Normal") %>%
-  body_add_fpar(fpar(ftext("Como Director del Área de Lenguajes y Sistemas Informáticos del Departamento de Ingeniería Informática de la Universidad de Burgos, conozco a la candidata Rocío Alonso las Heras por sus estudios cursados en el Grado de la Ingeniería de la Salud de nuestro departamento. En las dos asignaturas en que he tenido a la candidata de alumna, su dedicación y constancia hacia los estudios han sido más que notables. En particular, destacan sus habilidades en el tratamiento de datos y en el manejo de herramientas informáticas y de computación.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
+  body_add_fpar(fpar(ftext("Como director del Área de Lenguajes y Sistemas Informáticos del Departamento de Ingeniería Informática de la Universidad de Burgos, conozco a la candidata Rocío Alonso las Heras por sus estudios cursados en el Grado de la Ingeniería de la Salud de nuestra institución. En las dos asignaturas en que he tenido a la candidata de alumna, su dedicación y constancia hacia los estudios han sido más que notables. En particular, destacan sus habilidades en el tratamiento de datos y en el manejo de herramientas informáticas y de computación.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
   body_add_par("", style = "Normal") %>%
   body_add_fpar(
     block_list(
-      fpar(ftext("Además de haber sido su profesor en dos asignaturas, he tenido el placer de ser su tutor de trabajo de fin de grado, titulado:", fp_normal), fp_p = fp_par(line_spacing = 1.25), 
-      ftext('"Respuesta Sensorial Meridiana Autónoma (ASMR): Análisis de la Experiencia Global y Desarrollo de una Aplicación de Recomendación supervisada de ASMR"', fp_italic), 
+      fpar(ftext("Además de haber sido su profesor, he tenido el placer de ser su tutor de trabajo de fin de grado, titulado: ", fp_normal), fp_p = fp_par(line_spacing = 1.25), 
+      ftext('"Respuesta Sensorial Meridiana Autónoma (ASMR): Análisis de la Experiencia Global y Desarrollo de una Aplicación de Recomendación supervisada de ASMR"', fp_text(font.family = "Arial", font.size = 10, italic = TRUE, underlined = TRUE)), 
       ftext("; a ser presentado en la convocatoria de junio del curso 2023-24. El trabajo posee una calidad técnica y científica más que destacable, permitiéndole demostrar sus capacidades como ingeniera de la salud. El trabajo está públicamente accesible en el repositorio Github:", fp_normal),
       ftext("https://github.com/rocioalonsolh/tfg-asmr", fp_link)
     )),
     style = "Normal"
   ) %>%
+  body_add_par("", style = "Normal") %>%
   body_add_fpar(fpar(ftext("Su interés en la Minería de Datos, la Inteligencia Artificial y la Ciberseguridad ha sido una constante a lo largo de todos sus estudios universitarios, culminando con el previamente mencionado trabajo de fin de grado donde se familiarizó con las técnicas de programación en lenguajes como R y Python, preprocesamiento y análisis de datos y diseño e implementación de aplicaciones web tipo Shiny.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
   body_add_fpar(fpar(ftext("", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
   body_add_fpar(fpar(ftext("Por todos estos motivos, recomiendo a Rocío Alonso las Heras como candidata por su destacado interés en la materia, alta formación, responsabilidad y eficiencia en el ámbito académico.", fp_normal), fp_p = fp_par(line_spacing = 1.25))) %>%
